@@ -25,9 +25,10 @@ export default defineComponent({
 
     const fetchProfile = async () => {
       try {
+        const token = import.meta.env.VITE_PROJECT_API_TOKEN
         const response = await axios.get('https://api.github.com/users/julie-alt', {
           headers: {
-            Authorization: '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'
+            Authorization: `token ${token}`
           }
         })
         profile.value = response.data

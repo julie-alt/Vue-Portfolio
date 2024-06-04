@@ -40,6 +40,7 @@ const searchQuery = ref('')
 
 const fetchRepos = async () => {
   try {
+    const token=import.meta.env.VITE_PROJECT_API_TOKEN
     let url = `https://api.github.com/user/139226169/repos`
     const params: Params = { page: page.value, per_page: 2 }
     if (searchQuery.value) {
@@ -48,7 +49,8 @@ const fetchRepos = async () => {
     }
     const response = await axios.get(url, {
       params,
-      headers: { Authorization: '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' }
+      headers: { Authorization: 
+        `token ${token}` }
     })
     repos.value = searchQuery.value ? response.data.items : response.data
   } catch (error) {
