@@ -26,7 +26,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
 import axios from 'axios'
-import ResponsiveGrid from '@/assets/ResponsiveGrid.vue'
+import ResponsiveGrid from '@/assets/ResponsiveGrid.vue';
 
 interface Params {
   page: number
