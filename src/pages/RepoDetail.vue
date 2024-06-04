@@ -29,10 +29,9 @@ export default defineComponent({
 
     const fetchRepo = async () => {
       try {
-        const token=import.meta.env.VITE_PROJECT_API_TOKEN
         const response = await axios.get(`https://api.github.com/repos/julie-alt/${repoId}`, {
           headers: {
-            Authorization: `token ${token}`
+            Authorization: `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`
           }
         })
         repo.value = response.data
