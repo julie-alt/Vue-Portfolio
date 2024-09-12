@@ -1,45 +1,36 @@
-# vue-project
+# My Github Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+My GitHub Portfolio is a remake of my repository viewer website using Vue.js which allows users view my repositories. This app provides a simple and intuitive interface for browsing repositories and their details.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Search:** For searching repositories by name.
+- **Pagination:** Repositories are paginated, allowing users to navigate through multiple pages.
+- **Repository Details:** Users can view detailed information about each repository, such as its name, description, and URL to view the repository at Github.
+- **Responsive Design:** The app is designed to work well on various screen sizes, including desktops, tablets, and mobile devices.
 
-## Type Support for `.vue` Imports in TS
+## Technologies Used
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- Vue.js
+- Axios (for making HTTP requests)
+- GitHub API (for fetching repository data)
+- Google API Fonts (for font display)
 
-## Customize configuration
+## Usage
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Use the Search bar on the Navigation to Enter a GitHub username to view their profiles.
+2. Click the "Search" button to fetch repositories owned by me.
+3. Use pagination buttons to navigate between pages.
+4. Click on a repository to view its details.
 
-## Project Setup
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
+## Live Demo
 
-```sh
-npm run dev
-```
+You can find a live demo of the app [here] (https://vue-portfolio-two-xi.vercel.app/)
 
-### Type-Check, Compile and Minify for Production
+## Contributions
 
-```sh
-npm run build
-```
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please [open an issue](https://github.com/julie-alt/Vue-Portfolio/issues) or submit a pull request.
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
